@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="email-input">Email: </label>
+        <input type="email" name="email-input" id="email-input" required />
+        <div class="error-message" id="email-error-message"></div>
+      </div>
+
+      <div>
+        <label for="country">Country: </label>
+        <select id="country" name="country" required>
+          <option value="Philippines">Philippines</option>
+          <option value="Japan">Japan</option>
+          <option value="USA">USA</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="zip-code">Zip Code: </label>
+        <input type="text" name="zip-code" id="zip-code" required />
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          minlength="8"
+        />
+      </div>
+
+      <div>
+        <label for="confirm-password">Confirm Password</label>
+        <input
+          type="password"
+          name="confirm-password"
+          id="confirm-password"
+          required
+        />
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
